@@ -10,7 +10,6 @@
       "hidden": true,
       "description": "Base configuration for all presets",
       "binaryDir": "${sourceDir}/out/build/${presetName}",
-      "cmakeExecutable": "cmake",
       "cacheVariables": {
         "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
       }
