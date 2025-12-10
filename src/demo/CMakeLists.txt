@@ -1,3 +1,6 @@
 cmake_path(GET CMAKE_CURRENT_LIST_DIR FILENAME PROJ)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 add_executable(${PROJ} main.cpp)
-target_include_directories(${PROJ} PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
+if(MSVC)
+    target_compile_options(${PROJ} PRIVATE /utf-8)
+endif()

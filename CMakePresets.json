@@ -10,8 +10,9 @@
       "hidden": true,
       "description": "Base configuration for all presets",
       "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "installDir": "${sourceDir}/out/install/${presetName}",
       "cacheVariables": {
-        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "1"
       }
     },
     {
